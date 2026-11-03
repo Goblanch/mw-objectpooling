@@ -39,6 +39,7 @@ jobs:
           projectPath: .
           unityVersion: 6000.6.7f1
           testMode: ${{ matrix.testMode }}
+          coverageEnabled: false
           artifactsPath: artifacts-${{ matrix.testMode }}
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           checkName: Test results (${{ matrix.testMode }})
