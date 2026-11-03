@@ -18,6 +18,7 @@ Thumbs.db
 .ci/TestProject/Temp/
 .ci/TestProject/Logs/
 .ci/TestProject/UserSettings/
-.ci/TestProject/Assets/
+.ci/TestProject/Assets/*
+!.ci/TestProject/Assets/.gitkeep
 .ci/TestProject/ProjectSettings/*
 !.ci/TestProject/ProjectSettings/ProjectVersion.txt
