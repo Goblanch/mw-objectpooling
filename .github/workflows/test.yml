@@ -34,12 +34,13 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          GAME_CI_COVERAGE_ENABLED: "false"
         with:
           packageMode: true
           projectPath: .
           unityVersion: 6000.6.7f1
           testMode: ${{ matrix.testMode }}
-          coverageEnabled: false
+          cliVersion: v0.1.72
           artifactsPath: artifacts-${{ matrix.testMode }}
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           checkName: Test results (${{ matrix.testMode }})
