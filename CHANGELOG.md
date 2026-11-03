@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Design document (`Documentation~/DESIGN.md`).
 - README (Spanish and English) and changelog.
+- Package manifest and assembly definitions (Core, Unity, EditMode and PlayMode tests).
