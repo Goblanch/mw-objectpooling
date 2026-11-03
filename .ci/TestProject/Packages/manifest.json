@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "com.miradorworks.pooling": "file:../../..",
+        "com.unity.test-framework": "1.8.0"
+    },
+    "testables": [
+        "com.miradorworks.pooling"
+    ]
+}

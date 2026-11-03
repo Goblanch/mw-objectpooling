@@ -12,3 +12,12 @@ Thumbs.db
 # Never commit generated project files (they belong to the sandbox project)
 *.csproj
 *.sln
+
+# CI test project generated folders
+.ci/TestProject/Library/
+.ci/TestProject/Temp/
+.ci/TestProject/Logs/
+.ci/TestProject/UserSettings/
+.ci/TestProject/Assets/
+.ci/TestProject/ProjectSettings/*
+!.ci/TestProject/ProjectSettings/ProjectVersion.txt

@@ -36,8 +36,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
           GAME_CI_COVERAGE_ENABLED: "false"
         with:
-          packageMode: true
-          projectPath: .
+          projectPath: .ci/TestProject
           unityVersion: 6000.6.7f1
           testMode: ${{ matrix.testMode }}
           cliVersion: v0.1.72
