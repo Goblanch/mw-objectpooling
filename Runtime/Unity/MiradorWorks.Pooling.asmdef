@@ -1,0 +1,16 @@
+{
+    "name": "MiradorWorks.Pooling",
+    "rootNamespace": "MiradorWorks.Pooling",
+    "references": [
+        "MiradorWorks.Pooling.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
