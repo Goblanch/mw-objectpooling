@@ -1,0 +1,16 @@
+{
+    "name": "com.miradorworks.pooling",
+    "version": "0.1.0",
+    "displayName": "MiradorWorks Pooling",
+    "description": "Zero-allocation object pooling for Unity with configurable per-pool lifetime and no singletons.",
+    "unity": "6000.0",
+    "keywords": [
+        "pooling",
+        "object pool",
+        "performance"
+    ],
+    "author": {
+        "name": "Mirador Works (goblanch)"
+    },
+    "license": "MIT"
+}
