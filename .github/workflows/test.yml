@@ -15,6 +15,7 @@ jobs:
   test:
     name: Tests (${{ matrix.testMode }})
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     permissions:
       contents: read
       checks: write
@@ -29,6 +30,7 @@ jobs:
 
       - name: Run tests
         id: tests
+        timeout-minutes: 25
         uses: game-ci/unity-test-runner@v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -49,4 +51,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: test-results-${{ matrix.testMode }}
-          path: ${{ steps.tests.outputs.artifactsPath }}
+          path: artifacts-${{ matrix.testMode }}
