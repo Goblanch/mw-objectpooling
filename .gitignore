@@ -22,3 +22,5 @@ Thumbs.db
 !.ci/TestProject/Assets/.gitkeep
 .ci/TestProject/ProjectSettings/*
 !.ci/TestProject/ProjectSettings/ProjectVersion.txt
+!.ci/TestProject/ProjectSettings/EditorSettings.asset
+.ci/TestProject/Packages/packages-lock.json
