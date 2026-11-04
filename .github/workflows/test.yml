@@ -30,7 +30,7 @@ jobs:
 
       - name: Run tests
         id: tests
-        timeout-minutes: 25
+        timeout-minutes: 15
         uses: game-ci/unity-test-runner@v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -42,7 +42,7 @@ jobs:
           unityVersion: 6000.6.7f1
           testMode: ${{ matrix.testMode }}
           cliVersion: v0.1.72
-          artifactsPath: artifacts-${{ matrix.testMode }}
+          artifactsPath: artifacts~/${{ matrix.testMode }}
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           checkName: Test results (${{ matrix.testMode }})
 
@@ -51,4 +51,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: test-results-${{ matrix.testMode }}
-          path: artifacts-${{ matrix.testMode }}
+          path: artifacts~/${{ matrix.testMode }}
