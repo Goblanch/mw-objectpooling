@@ -2,9 +2,11 @@ name: Tests
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
+    paths-ignore: ['**.md', 'Documentation~/**']
   pull_request:
     branches: [main, develop]
+    paths-ignore: ['**.md', 'Documentation~/**']
   workflow_dispatch:
 
 concurrency:
